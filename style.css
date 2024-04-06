@@ -1,19 +1,89 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 
 * {
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
 }
 
 html {
-  font-size: 62.5%;
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 body {
-  font-family: 'Press Start 2P', sans-serif;
-  color: #eee;
   background-color: #302d31;
+  color: #eee;
+  font-family: 'Press Start 2P', sans-serif;
   /*new background*/
+}
+
+/*LAYOUT*/
+
+header {
+  border-bottom: 8px solid #eeeeee4f;
+  height: 35vh;
+  position: relative;
+}
+
+main {
+  align-items: center;
+  color: #eee;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 65vh;
+  justify-content: space-around;
+}
+
+
+
+/*ELEMENTS*/
+h1 {
+  font-size: 3.75rem;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  width: 100%; /*central*/
+}
+
+.number {
+  background: #eee;
+  bottom: -10%;
+  color: #333;
+  font-size: 5.50rem;
+  left: 50%;
+  padding: 3rem 0rem;
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  width: 15rem;
+}
+
+.between {
+  font-size: 1.4rem;
+  position: absolute;
+  right: 5rem;
+  top: 2rem;
+}
+
+.btn {
+  border: none;
+  background-color: #eee;
+  color: #222;
+  font-size: 2rem;
+  font-family: inherit;
+  padding: 2rem 3rem;
+  cursor: pointer;
+  transition: .1s ease-in-out;
+}
+.btn:hover {
+  background-color: #ccc;
+}
+
+.again {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
 }
