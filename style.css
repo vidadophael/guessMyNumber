@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
 
 * {
   box-sizing: inherit;
@@ -14,7 +14,7 @@ html {
 body {
   background-color: #302d31;
   color: #eee;
-  font-family: 'Press Start 2P', sans-serif;
+  font-family: "Press Start 2P", sans-serif;
   /*new background*/
 }
 
@@ -22,7 +22,7 @@ body {
 
 header {
   border-bottom: 8px solid #eeeeee4f;
-  height: 35vh;
+  height: 45vh;
   position: relative;
 }
 
@@ -34,8 +34,6 @@ main {
   height: 65vh;
   justify-content: space-around;
 }
-
-
 
 /*ELEMENTS*/
 h1 {
@@ -50,9 +48,9 @@ h1 {
 
 .number {
   background: #eee;
-  bottom: -10%;
+  bottom: -25%;
   color: #333;
-  font-size: 5.50rem;
+  font-size: 5.5rem;
   left: 50%;
   padding: 3rem 0rem;
   position: absolute;
@@ -76,7 +74,7 @@ h1 {
   font-family: inherit;
   padding: 2rem 3rem;
   cursor: pointer;
-  transition: .1s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 .btn:hover {
   background-color: #ccc;

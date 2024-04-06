@@ -5,33 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--CSS-->
-    <link rel="stylesheet" href="./style.css">
-    
+    <link rel="stylesheet" href="./style.css" />
+
     <title>Advinhe o número</title>
   </head>
   <body>
     <header>
-
       <h1>Adivinhe o número</h1>
       <p class="between">(entre 1 e 20)</p>
       <button class="btn again">Jogar de novo!</button>
       <div class="number">?</div>
-
     </header>
 
     <main>
-
       <section class="left">
-        <input type="number" class="guess">
+        <input type="number" class="guess" min="0" max="20"/>
         <button class="btn check">Verificar!</button>
       </section>
 
       <section class="right">
-        <p class="message">Adivinhe agora...</p>
-        <p class="label-score">😎 Score: <span>20</span></p>
-        <p class="label-highscore">🎯 Pontuação máxima: <span>0</span></p>
+        <p class="message">Adivinhe agora... 🤔</p>
+        <p class="label-score"> Score: <span class="score">20</span><span> ⛳️</span></p>
+        <p class="label-highscore"> Pontuação máxima: <span class="highscore">0</span><span> 🎯</span></p>
       </section>
-
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>
