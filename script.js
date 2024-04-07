@@ -18,7 +18,7 @@ function startGame() {
   const messageDisplay = function(message) {
     document.querySelector(".message").textContent = message;
   }
-  
+
 
   document.querySelector(".check").addEventListener("click", function () {
     let guess = Number(document.querySelector(".guess").value);
@@ -44,7 +44,7 @@ function startGame() {
       //game roles
     } else if(guess != secretNumber) {
       if (score > 1) {
-        document.querySelector(".message").textContent = guess > secretNumber ? "Grande demais... 🤏🏽" : "Passou longe... 🥶";
+        messageDisplay(guess > secretNumber ? "Grande demais... 🤏🏽" : "Passou longe... 🥶");
         score--;
         document.querySelector(".score").textContent = score;
       } else {
