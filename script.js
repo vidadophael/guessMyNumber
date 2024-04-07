@@ -9,7 +9,7 @@ function startGame() {
   //console.log(score, typeof score)
   console.log(secretNumber);
 
-  let highscore = 0
+  let highscore = 0;
 
   document.querySelector(".check").addEventListener("click", function () {
     let guess = Number(document.querySelector(".guess").value);
@@ -27,11 +27,11 @@ function startGame() {
       document.querySelector(".number").style.width = "30rem";
 
       //update hightscore
-      if(highscore < score){
-        highscore = score
+      if (highscore < score) {
+        highscore = score;
       }
-      document.querySelector('.highscore').textContent = score
-    
+      document.querySelector(".highscore").textContent = score;
+
       // check score and guess is too hight
     } else if (guess > secretNumber) {
       if (score > 1) {
@@ -66,6 +66,7 @@ function startGame() {
     document.querySelector(".number").style.width = "15rem";
     document.querySelector(".guess").value = "";
     document.querySelector(".number").textContent = "?";
+    document.querySelector(".score").textContent = 20;
   });
 }
 
