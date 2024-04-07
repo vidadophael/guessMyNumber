@@ -4,7 +4,7 @@
 
 Um jogo simples de adivinhar números desenvolvido em HTML, CSS e JavaScript.
 
-![Screenshot do Jogo](./assets/imG/srcm01.svg)
+![Screenshot do Jogo](./assets/img/srcm01.svg)
 
 ## Como Jogar
 
